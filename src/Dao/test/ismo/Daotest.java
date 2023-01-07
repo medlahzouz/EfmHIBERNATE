@@ -51,8 +51,8 @@ public class Daotest {
 	void savetest() throws FileNotFoundException, ClassNotFoundException, IOException, SQLException {
 		IDao dao = DaoFactory.getDAO(TypeDao.Appartement);
 		List<Appartement> aprt_before = dao.getAll();
-		Appartement aprt = new Appartement("lettre5",3);
-		dao.add();
+		Appartement aprt = new Appartement("lettre5",3, null);
+		dao.save(aprt);
 		List<Appartement> aprt_after = dao.getAll();
 		assertEquals(aprt_before.size()+1, aprt_after.size());
 	
