@@ -23,7 +23,7 @@ create table Etage
 );
 create table Appartement
 (
-  lettre_appartement int primary key auto_increment,
+  lettre_appartement varchar(90) primary key,
   nb_pieces_total int,
  num_etage int,
   FOREIGN KEY (num_etage) REFERENCES Etage(num_etage)

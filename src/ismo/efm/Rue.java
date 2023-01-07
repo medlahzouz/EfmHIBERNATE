@@ -15,8 +15,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @Entity
 @Table
-
 @Getter
+
 @Setter
 @ToString
 public class Rue {
@@ -26,5 +26,8 @@ public class Rue {
 	private int id;
 	@Column
 	private String nom_rue;
+	
+	
+	
 
 }

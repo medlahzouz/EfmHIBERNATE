@@ -23,7 +23,6 @@ import lombok.ToString;
 @AllArgsConstructor
 @Entity
 @Table
-
 @Getter
 @Setter
 @ToString
